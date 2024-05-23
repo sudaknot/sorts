@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="title">Sort Visualizer</div>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="mergeSort()">Merge Sort</button>
+            <button onclick="insertionSort()">Insertion Sort</button>
+            <button onclick="quickSort()">Quick Sort</button>
+            <button onclick="heapSort()">Heap Sort</button>
+            <button onclick="bubbleSort()">Bubble Sort</button>
+            <button onclick="oddEvenSort()">Odd Even Sort</button>
+            <button onclick="radixMSDSort()">Radix MSD Sort</button>
+            <button onclick="gnomeSort()">Gnome Sort</button>
+            <button onclick="shellSort()">Shell Sort</button>
+            <button onclick="selectionSort()">Selection Sort</button>
+            <button onclick="cocktailShakerSort()">Cocktail Shaker Sort</button>
+        </div>
+        <div class="slideContainer">
+            <p>Length: <span id="value"></span></p>
+            <input type="range" min="10"max="200" value="50" step="5" id="myRange" class="slider">
+            <p>Speed</p>
+            <input type="range" min="-300"max="100" value="-10" step="2" id="mySpeed" class="slider">
+        </div> 
+        <div class="controlbuttons">
+            <button class="controlbutton" id="newarraybutton" onclick="generateArray(arraySize)">New Array</button>
+            <button class="controlbutton" id="cancelbutton" onclick="cancel()">Reset</button>
+        </div>
+        <div class="array-container" id="arrayContainer"></div>
+    </div>
+    <div class="tablediv">
+        <div class="tableheader">Time Complexity</div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Best</th>
+                    <td id="d1"></td>
+                    <th>Avg</th>
+                    <td id="d2"></td>
+                    <th>Worst</th>
+                    <td id="d3"></td>
+                    <th>Stable</th>
+                    <td id="d4"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="sort.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+body {
+    background-color:black;
+    color: white;
+
+}
+#title {
+  padding-bottom: 1px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0; /* Set both left and right to 0 to center horizontally */
+  text-align: center; /* Center-align text horizontally */
+  font-size: 30px;
+  border-bottom:4px solid green;
+} 
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 1px;
+  margin-left: 1px;
+  border-color: black;
+  
+}
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+  
+  margin-top: 10px;
+  margin-bottom: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: rgba(82, 228, 87, 0.894);
+}
+
+.slider {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
+  background-color: black;
+  
+  
+}
+
+.slider::-webkit-slider-runnable-track {
+  background-color: #646464;
+  height: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track:hover {
+  box-shadow: 0 0 10px .5px rgb(154, 125, 125);
+  background-color: rgb(172, 150, 150);
+}
+
+.slider::-moz-range-track {
+  background-color: #646464;
+  height: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.slider::-moz-range-track:hover {
+  box-shadow: 0 0 10px .5px rgb(154, 125, 125);
+  background-color: rgb(172, 150, 150);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: -6px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: -6px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+}
+
+.slider::-moz-range-thumb:hover {
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  opacity: 0.8;
+  background-color: black;
+  border-color: white;
+  color: lightcyan;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5) ;
+  border-radius: 5%;
+  border-width: 2px;
+  padding: 8px;
+}
+
+.controlbutton{
+  color: white;
+  margin-bottom: 6px;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 20px;
+  border-radius: 40%;
+  margin-bottom: 5px;
+  background-color: black;
+  border-color: white;
+}
+
+.tablediv {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: separate;
+  margin-top: 0px;
+  
+}
+
+th {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+} 
+
+td {
+  border: 1px solid rgba(113, 231, 170, 0.61);
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.tableheader {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(211, 240, 236);
+}
+
+@media (max-width: 768px) {
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .tableheader {
+    font-size: 1em;
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  th, td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .tableheader {
+    font-size: 0.9em;
+    padding-top: 3px;
+    padding-bottom: 2px;
+  }
+
+  table {
+    font-size: 0.9em; 
+  }
+}

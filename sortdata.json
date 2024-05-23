@@ -1,0 +1,79 @@
+[
+  {
+    "sortname": "Merge Sort",
+    "best": "Ω(n log n)",
+    "avg": "Θ(n log n)",
+    "worst": "O(n log n)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Insertion Sort",
+    "best": "Ω(n)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Quick Sort",
+    "best": "Ω(n log n)",
+    "avg": "Θ(n log n)",
+    "worst": "O(n^2)",
+    "stability": "No"
+  },
+  {
+    "sortname": "Heap Sort",
+    "best": "Ω(n log n)",
+    "avg": "Θ(n log n)",
+    "worst": "O(n log n)",
+    "stability": "No"
+  },
+  {
+    "sortname": "Cocktail Shaker Sort",
+    "best": "Ω(n)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Bubble Sort",
+    "best": "Ω(n)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Odd Even Sort",
+    "best": "Ω(n)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Radix MSD Sort",
+    "best": "Ω(nk)",
+    "avg": "Θ(nk)",
+    "worst": "O(nk)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Gnome Sort",
+    "best": "Ω(n)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "Yes"
+  },
+  {
+    "sortname": "Shell Sort",
+    "best": "Ω(n log n)",
+    "avg": "O(n log n)",
+    "worst": "O(n(log n)^2)",
+    "stability": "No"
+  },
+  {
+    "sortname": "Selection Sort",
+    "best": "Ω(n^2)",
+    "avg": "Θ(n^2)",
+    "worst": "O(n^2)",
+    "stability": "No"
+  }
+]
